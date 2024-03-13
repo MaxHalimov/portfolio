@@ -72,7 +72,7 @@ body {
   left: 50px;
   bottom: 70px;
   gap: 20px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .emailFixed {
@@ -186,7 +186,7 @@ body {
 .vec1 {
   left: 0;
   top: 0px;
-  z-index: 2;
+  z-index: 1;
 }
 .vec2 {
   left: 0;
