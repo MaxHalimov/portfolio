@@ -63,6 +63,18 @@ body {
   border: none;
   background: none;
 }
+.burgerMob {
+  display: none;
+}
+.btnBurger {
+  display: none;
+}
+.linksMob {
+  display: none;
+}
+.themeMob {
+  display: none;
+}
 
 .socialMedia {
   display: flex;
@@ -97,6 +109,8 @@ body {
 .heroTexts {
   position: relative;
   font-size: 35px;
+  display: flex;
+  flex-direction: column;
 }
 .heroTitle {
   padding-left: 60px;
@@ -118,12 +132,24 @@ body {
   font-size: 64px;
   font-weight: 700px;
 }
+.heroButtons {
+  display: flex;
+  gap: 15px;
+}
+.heroButtons button {
+  width: 200px;
+}
 
 .myName {
   text-decoration: underline;
   text-underline-offset: 10px;
   color: #737373;
   transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.txt1 {
+  font-weight: 300;
+  padding-bottom: 100px;
 }
 
 .btnDwnl {
@@ -136,7 +162,6 @@ body {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
-  margin-right: 20px;
 }
 
 .btnTouch {
@@ -206,6 +231,10 @@ body {
   z-index: 0;
 }
 
+.heroButtons2 {
+  display: none;
+}
+
 @media screen and (max-width: 1940px) {
   .secondBlock {
     width: 900px;
@@ -226,6 +255,7 @@ body {
     font-size: 50px;
   }
   .secondBlock p span {
+    font-size: 86px;
   }
   .captionBlock p {
     font-size: 16px;
@@ -260,8 +290,149 @@ body {
   .secondSection {
     padding-left: 400px;
   }
-
   .secondBlock {
     font-size: 14px;
+  }
+  .pic1 {
+    width: 640px;
+  }
+  .captionBlock {
+    width: 640px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .captionBlock {
+    width: 600px;
+  }
+  .pic1 {
+    width: 600px;
+  }
+  .heroIcon img {
+    width: 150px;
+  }
+  .heroTitle {
+    font-size: 25px;
+    padding-left: 55px;
+  }
+  .heroName {
+    font-size: 55px;
+  }
+  .myName {
+    font-size: 46px;
+  }
+  .heroName span img {
+    width: 65px;
+  }
+  .txt1 {
+    font-size: 26px;
+  }
+  .vec3 {
+    display: none;
+  }
+  .vec4 {
+    display: none;
+  }
+  .vec5 {
+    display: none;
+  }
+  .links {
+    display: none;
+  }
+  .burgerMob {
+    display: flex;
+    gap: 20px;
+  }
+  .dark .btnBurger {
+    background-color: #202020;
+  }
+  .btnBurger {
+    display: block;
+    border: none;
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  .themeMob {
+    display: block;
+    border: none;
+    background: none;
+  }
+  .linksMob {
+    position: relative;
+  }
+  .active {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    gap: 10px;
+    background-color: gainsboro;
+    padding: 30px;
+    border-radius: 20px;
+  }
+  .active a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .hero_block {
+    flex-direction: column;
+  }
+  .heroButtons {
+    display: none;
+  }
+  .heroButtons2 {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  .txt1 {
+    padding-bottom: 10px;
+  }
+  .divMe {
+    display: flex;
+    justify-content: center;
+  }
+  .secondBlock {
+    width: 600px;
+  }
+  .secondBlock span img {
+    width: 200px;
+  }
+  .vec1 {
+    left: -100px;
+  }
+  .vec2 {
+    left: -100px;
+  }
+  .secondSection {
+    padding-left: 300px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .vec1 {
+    left: -200px;
+  }
+  .vec2 {
+    left: -200px;
+  }
+  .secondSection {
+    padding-left: 180px;
+  }
+  .captionBlock {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .secondBlock p {
+    width: 450px;
+  }
+  .secondBlock span img {
+    width: 150px;
   }
 }
