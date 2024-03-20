@@ -10,6 +10,16 @@ body {
   position: relative;
 }
 
+@keyframes textFade {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fadeOut {
+    animation: textFade 1.5s ease-in-out forwards;
+}
+
 .nav_block {
   display: flex;
   justify-content: space-between;
@@ -118,6 +128,13 @@ body {
   color: #fff;
   font-weight: 700;
 }
+
+.heroIcon {
+  width: 220px;
+  display: flex;
+  align-items: center; /* Центрируем элементы по вертикали */
+  justify-content: center;
+}
 .heroIcon img {
   position: absolute;
   z-index: -1;
@@ -131,6 +148,9 @@ body {
 .heroName {
   font-size: 64px;
   font-weight: 700px;
+}
+.heroName span img {
+  width: 100px;
 }
 .heroButtons {
   display: flex;
@@ -306,6 +326,12 @@ body {
   }
 }
 @media screen and (max-width: 1400px) {
+  .heroIcon {
+    width: 170px;
+    display: flex;
+    align-items: center; /* Центрируем элементы по вертикали */
+    justify-content: center;
+  }
   .captionBlock {
     width: 600px;
   }
@@ -504,5 +530,8 @@ body {
   }
   .emailFixed {
     display: none;
+  }
+  .heroButtons2 button {
+    font-size: 15px;
   }
 }
