@@ -463,7 +463,6 @@ body {
     display: flex;
     justify-content: center;
   }
-
 }
 
 @media screen and (max-width: 700px) {
@@ -474,7 +473,13 @@ body {
   .pic1 {
     width: 400px;
   }
-  
+
+  .secondBlock p {
+    width: 300px;
+  }
+  .secondBlock p span img {
+    display: none;
+  }
   .captionBlock {
     width: 300px;
   }
@@ -491,7 +496,6 @@ body {
   .myName {
     font-size: 40px;
   }
-
 }
 
 @media screen and (max-width: 550px) {
