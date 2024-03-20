@@ -465,3 +465,40 @@ body {
   }
 
 }
+
+@media screen and (max-width: 700px) {
+  .hero_block {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .pic1 {
+    width: 400px;
+  }
+  
+  .captionBlock {
+    width: 300px;
+  }
+  .captionBlock p {
+    width: 300px;
+  }
+
+  .heroName {
+    font-size: 40px;
+  }
+  .heroName span img {
+    width: 60px;
+  }
+  .myName {
+    font-size: 40px;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .socialMedia {
+    display: none;
+  }
+  .emailFixed {
+    display: none;
+  }
+}
