@@ -26,7 +26,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding: 40px 40px;
+  padding: 40px 40px 20px 40px;
   z-index: 1000;
   transition: background-color 0.5s ease, color 0.5s ease;
   background-color: #fff;
@@ -111,7 +111,7 @@ body {
 }
 
 .hero_block {
-  padding: 100px 150px;
+  padding: 20px 150px;
   padding-right: 100px;
   display: flex;
   justify-content: space-between;
@@ -319,7 +319,7 @@ body {
     font-size: 14px;
   }
   .pic1 {
-    width: 640px;
+    width: 580px;
   }
   .captionBlock {
     width: 640px;
@@ -336,7 +336,7 @@ body {
     width: 600px;
   }
   .pic1 {
-    width: 600px;
+    width: 580px;
   }
   .heroIcon img {
     width: 150px;

@@ -28,7 +28,7 @@ window.onload = function () {
 };
 
 const elements = {
-  logo: ["./assets/logo.svg", "./assets/logo_white.svg"],
+  logo: ["./assets/logo.png", "./assets/logo_dark.png"],
   btnTheme: ["./assets/moon.svg", "./assets/sun.svg"],
   btnTheme1: ["./assets/moon.svg", "./assets/sun.svg"],
   btnBurger: ["./assets/Burger Menu.svg", "./assets/Burger Menu white.svg"],
@@ -41,32 +41,34 @@ const elements = {
   vec3: ["./assets/Vector 4.svg", "./assets/Vector 4dark.svg"],
   vec4: ["./assets/Vector 5.svg", "./assets/Vector 5dark.svg"],
   vec5: ["./assets/Vector 3.svg", "./assets/Vector 3dark.svg"],
-  underlineVec: ["./assets/Line 6.svg", "./assets/Line 6dark.svg"],
+  underlineVec: ["./assets/Line 6.svg", "./assets/Line 6dark.svg"]
 };
 
-themeButton.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-
+// Функция обновления изображений
+function updateImages() {
+  const isDark = document.body.classList.contains("dark");
   for (let id in elements) {
     const element = document.getElementById(id);
-    const src = document.body.classList.contains("dark")
-      ? elements[id][1]
-      : elements[id][0];
-    element.setAttribute("src", src);
+    if (element) {
+      element.setAttribute("src", isDark ? elements[id][1] : elements[id][0]);
+    }
   }
+}
+
+// Кнопка для отключения темной темы
+themeButton.addEventListener("click", () => {
+  document.body.classList.remove("dark");
+  updateImages();
 });
 
+// Кнопка для переключения темы
 themeButton2.addEventListener("click", () => {
   document.body.classList.toggle("dark");
-
-  for (let id in elements) {
-    const element = document.getElementById(id);
-    const src = document.body.classList.contains("dark")
-      ? elements[id][1]
-      : elements[id][0];
-    element.setAttribute("src", src);
-  }
+  updateImages();
 });
+
+// Устанавливаем правильные изображения при загрузке страницы
+updateImages();
 
 document.querySelector(".btnBurger").addEventListener("click", function () {
   document.querySelector(".linksMob").classList.toggle("active");
