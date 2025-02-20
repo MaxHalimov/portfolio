@@ -55,13 +55,13 @@ function updateImages() {
   }
 }
 
-// Кнопка для отключения темной темы
+// Кнопка для переключения темы (добавляет и убирает класс dark)
 themeButton.addEventListener("click", () => {
-  document.body.classList.remove("dark");
+  document.body.classList.toggle("dark");
   updateImages();
 });
 
-// Кнопка для переключения темы
+// Кнопка для переключения темы (если их две, то обе должны работать одинаково)
 themeButton2.addEventListener("click", () => {
   document.body.classList.toggle("dark");
   updateImages();
