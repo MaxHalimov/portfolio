@@ -32,6 +32,10 @@ body {
   background-color: #fff;
 }
 
+.pic1 {
+  width: 580px;
+}
+
 .dark {
   background-color: #202020;
   color: #fff;
@@ -261,6 +265,9 @@ body {
 }
 
 @media screen and (max-width: 1940px) {
+  .pic1 {
+    width: 580px;
+  }
   .secondBlock {
     width: 900px;
     font-size: 16px;
